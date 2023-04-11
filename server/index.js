@@ -26,9 +26,11 @@ app.use(cookieParser());
 
 app.use(
   cors({
+    credentials:true,
     origin: [
       "https://insta-book-app.onrender.com",
       "https://64354d27bc36d1483796e924--fanciful-youtiao-8d2f51.netlify.app",
+      "http://localhost:3000"
     ],
   })
 );
